@@ -6,7 +6,7 @@
 @extends('layouts.app')
 @section('titulo','cadastro de usuario')
 
-
+<!--t -->
     @if($errors->any())
         
         <div class="alert alert-danger">
