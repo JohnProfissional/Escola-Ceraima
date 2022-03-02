@@ -11,7 +11,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'GRUPO ESCOLAR COLONIA AGRICOLA DE CERAIMA') }}</title>
+    <title>{{ config('app.name', 'Grupo-Escolar-Colonia-Agricola-Ceraima') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
