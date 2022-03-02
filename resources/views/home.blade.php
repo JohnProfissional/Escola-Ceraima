@@ -5,9 +5,6 @@
 
 
 @section('conteudo')
-
-
-
 @section('titulo','GRUPO ESCOLAR COLONIA AGRICOLA DE CERAIMA')
 
 <div class="container">
@@ -34,7 +31,7 @@
                             <li> 
                                 <a href="{{route('patrimonio.index')}}">
                                     <img src="{{ URL::asset('images/patrimonio.jpeg'); }}"
-                                style="width:150px; height:150px;"><br><h4>Patrimônio</h4>
+                                    style="width:150px; height:150px;"><br><h4>Patrimônio</h4>
                                 </a> 
                             </li>
                             <li>
@@ -72,20 +69,8 @@
                                     style="width:150px; height:150px;"><br><h4>Previsão de entregar</h4>
                                 </a>   
                             </li>
-                        </ul>
-                       
-                    
-                   
-                      
-                    
-                   
-                        
-                    </a>
-                        
-                    
-                    
-                     
-                     
+                        </ul>               
+                                 
                     </div>
                    
                 </div>
