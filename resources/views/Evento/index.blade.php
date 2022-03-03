@@ -52,10 +52,10 @@
           @endforeach
         </table>          
     </thead>
-          
-@endsection('conteudo')
-@section('footer')
+          @section('footer')
 @endsection('footer')
+@endsection('conteudo')
+
     
 </div>
   
