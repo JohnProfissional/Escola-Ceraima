@@ -44,12 +44,7 @@
                     <input type="submit" class="btn btn-primary" value="deletar">
                     </form> 
                 </td>
-                <td>
-                    <form action="{{route('reservas.create')}}" method="post">
-                        @csrf
-                        <input type="submit" class="btn btn-primary" name="formulario" value="novo">
-                    </form>
-                </td>
+               
                 <td>
                     <form action="{{route('reservas.edit', ['id' => $reserva->id])}}" method="post">
                         @csrf
@@ -58,6 +53,13 @@
                 </td>
           
           @endforeach
+          
+           <td>
+                    <form action="{{route('reservas.create')}}" method="post">
+                        @csrf
+                        <input type="submit" class="btn btn-primary" name="formulario" value="fazer uma nova reserva">
+                    </form>
+                </td>
      
      
     </table>
