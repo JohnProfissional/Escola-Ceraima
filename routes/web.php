@@ -46,16 +46,16 @@ Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home
 
 
 
-Route::get('/index/usuarios',[UsuarioController::class,'index'])->name('usuario.index');
+Route::get('/index/usuarios',[UsuarioController::class,'index'])->middleware(['auth'])->name('usuario.index');
 
-Route::post('/create/usuarios',[UsuarioController::class,'create'])->name('usuario.create');
+Route::post('/create/usuarios',[UsuarioController::class,'create'])->middleware(['auth'])->name('usuario.create');
 
-Route::get('/create/usuarios',[UsuarioController::class,'create'])->name('usuario.create');
+Route::get('/create/usuarios',[UsuarioController::class,'create'])->middleware(['auth'])->name('usuario.create');
 
-Route::post('/storeusuarios',[UsuarioController::class,'store'])->name('usuario.store');
+Route::post('/storeusuarios',[UsuarioController::class,'store'])->middleware(['auth'])->name('usuario.store');
 
-Route::post('/usuarios/edit/{id}',[UsuarioController::class,'edit'])->name('usuario.edit');
-Route::delete('/usuarios/{id}',[UsuarioController::class, 'destroy'])->name('usuario.delete');
+Route::post('/usuarios/edit/{id}',[UsuarioController::class,'edit'])->middleware(['auth'])->name('usuario.edit');
+Route::delete('/usuarios/{id}',[UsuarioController::class, 'destroy'])->middleware(['auth'])->name('usuario.delete');
 
 
 
