@@ -54,14 +54,14 @@
     </table>
 
 
-    
+  @section('footer')
+
+@endsection('footer')
+  
 
 
 @endsection('conteudo')
 
-@section('footer')
-
-@endsection('footer')
 
 
 
