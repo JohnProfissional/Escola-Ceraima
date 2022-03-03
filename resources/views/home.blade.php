@@ -26,19 +26,19 @@
 				<li>
                                 <a href="{{route('evento.index')}}">
                                     <img src="{{ URL::asset('images/eventos.png'); }}"
-                                    style="width:50px; height:150px;"><br><h4>Evento</h4>
+                                    style="width:50px; height:50px;"><br><h4>Evento</h4>
                                 </a>  
                             </li>
                             <li> 
                                 <a href="{{route('patrimonio.index')}}">
                                     <img src="{{ URL::asset('images/patrimonio.jpeg'); }}"
-                                    style="width:50px; height:150px;"><br><h4>Patrimônio</h4>
+                                    style="width:50px; height:50px;"><br><h4>Patrimônio</h4>
                                 </a> 
                             </li>
                             <li>
                                 <a href="{{route('manutencao.index')}}">
                                     <img src="{{ URL::asset('images/Manutenção.jpg'); }}"
-                                    style="width:50px; height:150px;"><br><h4>Manutenção</h4>
+                                    style="width:50px; height:50px;"><br><h4>Manutenção</h4>
                                 </a>
                                 
                             </li>
@@ -46,7 +46,7 @@
                              <li>
                                 <a href="{{route('reservas.index')}}">
                                     <img src="{{ URL::asset('images/reserva.png'); }}"
-                                    style="width:50px; height:150px;"><br><h4>Reserva</h4>
+                                    style="width:50px; height:50px;"><br><h4>Reserva</h4>
                                 </a>
                                 
                             </li>
