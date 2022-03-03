@@ -74,7 +74,3 @@
         <input type="submit" class="btn btn-primary" value="cadastrar"><br>  
     </form>              
 @endsection('conteudo')
-
-@section('footer')
-
-@endsection('footer')
