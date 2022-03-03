@@ -31,7 +31,6 @@
 <div id="container">
 
          @yield('conteudo')<br>
-	        <h4>@yield('subtitulo')</h4>
 
          <div id="footer" align="center">
                  
