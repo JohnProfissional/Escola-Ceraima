@@ -5,7 +5,7 @@
 
 
 @section('conteudo')
-@section('titulo','GRUPO ESCOLAR COLONIA AGRICOLA DE CERAIMA')
+
 
 <div class="container">
     <div class="row justify-content-center">
