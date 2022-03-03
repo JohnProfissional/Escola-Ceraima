@@ -34,7 +34,7 @@
 	        <h4>@yield('subtitulo')</h4>
 
          <div id="footer" align="center">
-                    @yield('footer')
+                 
                         <br>
                         <br><br>
                         copyrigth @GRUPO ESCOLAR COLONIA AGRICOLA DE CERAIMA
