@@ -54,20 +54,20 @@
                             <li>
                                 <a href="{{route('testes.index')}}">
                                     <img src="{{ URL::asset('images/teste.jpg'); }}"
-                                    style="width:50px; height:150px;"><br><h4>Teste</h4>
+                                    style="width:50px; height:50px;"><br><h4>Teste</h4>
                                 </a>   
                             </li>
                             <li>
                                 <a href="{{route('usuario.index')}}">
                                     <img src="{{ URL::asset('images/Usuario.png'); }}"
-                                    style="width:50px; height:150px;"><br><h4>Usuário</h4>
+                                    style="width:50px; height:50px;"><br><h4>Usuário</h4>
                                 </a>   
                             </li>
 
                             <li>
                                 <a href="{{route('previsaoentregar.index')}}">
                                     <img src="{{ URL::asset('images/presisão_entregar.png'); }}"
-                                    style="width:50px; height:150px;"><br><h4>Previsão de entregar</h4>
+                                    style="width:50px; height:50px;"><br><h4>Previsão de entregar</h4>
                                 </a>   
                             </li>
 			</ul>
