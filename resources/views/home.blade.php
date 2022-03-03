@@ -6,7 +6,6 @@
 
 @section('conteudo')
 
-
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -19,10 +18,11 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                     {{ __('Seja bem vindo') }}
-                    <div>
-                        <ul id="menu-h">
-                            <li>
+
+                    <div id="nav">
+			<ul id="menu-h">
+
+				<li>
                                 <a href="{{route('evento.index')}}">
                                     <img src="{{ URL::asset('images/eventos.png'); }}"
                                     style="width:150px; height:150px;"><br><h4>Evento</h4>
@@ -69,13 +69,14 @@
                                     style="width:150px; height:150px;"><br><h4>Previsão de entregar</h4>
                                 </a>   
                             </li>
-                        </ul>               
-                                 
-                    </div>
-                   
+			</ul>
+		</div>
+
+
                 </div>
             </div>
         </div>
     </div>
 </div>
 @endsection
+
