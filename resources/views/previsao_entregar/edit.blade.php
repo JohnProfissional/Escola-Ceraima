@@ -28,6 +28,3 @@
 
 @endsection('conteudo')
 
-@section('footer')
-
-@endsection('footer')
