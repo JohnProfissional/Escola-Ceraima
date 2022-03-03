@@ -37,12 +37,7 @@
                     <input type="submit" class="btn btn-primary" value="deletar">
                     </form> 
             </td>
-            <td>
-                <form action="{{route('evento.create')}}" method="post">
-                    @csrf
-                    <input type="submit" class="btn btn-primary" name="formulario" value="novo">
-                    </form>
-                </td>
+           
                 <td>
                     <form action="{{route('evento.edit', ['id' => $evento->id])}}" method="post">
                         @csrf
@@ -50,6 +45,13 @@
                     </form>
                 </td>
           @endforeach
+          
+           <td>
+                <form action="{{route('evento.create')}}" method="post">
+                    @csrf
+                    <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar um novo evento">
+                    </form>
+                </td>
         </table>          
     </thead>
           @section('footer')
