@@ -54,8 +54,7 @@
                 </td>
         </table>          
     </thead>
-          @section('footer')
-@endsection('footer')
+     
 @endsection('conteudo')
 
     
