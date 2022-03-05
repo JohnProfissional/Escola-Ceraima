@@ -63,7 +63,7 @@
     </table><br>
      <form action="{{route('reservas.create')}}" method="post">
                         @csrf
-                        <input type="submit" class="btn btn-primary" name="formulario" value="fazer uma nova reserva">
+                        <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar uma nova reserva">
                     </form>
 
 
