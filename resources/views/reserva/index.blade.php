@@ -1,7 +1,8 @@
-@extends('layouts.main')
-@extends('layouts.app')
+
 
 @section('conteudo')
+@extends('layouts.main')
+@extends('layouts.app')
 @section('titulo','lista de reserva')
 
   <table class="table table-sm">
@@ -55,14 +56,15 @@
           @endforeach
           
            <td>
-                    <form action="{{route('reservas.create')}}" method="post">
-                        @csrf
-                        <input type="submit" class="btn btn-primary" name="formulario" value="fazer uma nova reserva">
-                    </form>
+                   
                 </td>
      
      
-    </table>
+    </table><br>
+     <form action="{{route('reservas.create')}}" method="post">
+                        @csrf
+                        <input type="submit" class="btn btn-primary" name="formulario" value="fazer uma nova reserva">
+                    </form>
 
 
     
