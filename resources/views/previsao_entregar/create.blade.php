@@ -1,6 +1,7 @@
+
+@section('conteudo')
 @extends('layouts.app')
 @extends('layouts.main')
-@section('conteudo')
 
     @section('titulo','cadastro de previsão de entregar de equipamentos')
 
