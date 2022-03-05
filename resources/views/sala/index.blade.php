@@ -52,7 +52,7 @@
     </table>
     <form action="{{route('sala.create')}}" method="post">
                         @csrf
-                        <input type="submit" class="btn btn-primary" name="formulario" value="novo">
+                        <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar uma nova sala">
                     </form>
 
 
