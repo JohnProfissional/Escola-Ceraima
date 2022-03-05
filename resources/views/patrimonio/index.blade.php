@@ -1,6 +1,7 @@
+
+@section('conteudo')
 @extends('layouts.main')
 @extends('layouts.app')
-@section('conteudo')
 @section('titulo','lista de patrimonio')
 
   <table class="table table-sm">
@@ -38,10 +39,7 @@
                     </form> 
                 </td>
                 <td>
-                    <form action="{{route('patrimonio.create')}}" method="post">
-                        @csrf
-                        <input type="submit" class="btn btn-primary" name="formulario" value="novo">
-                    </form>
+                    
                 </td>
                 <td>
                     <form action="{{route('patrimonio.edit', ['id' => $patrimonio->id])}}" method="post">
@@ -51,7 +49,12 @@
                 </td>
                
           @endforeach
-    </table>
+    </table><br>
+    
+    <form action="{{route('patrimonio.create')}}" method="post">
+                        @csrf
+                        <input type="submit" class="btn btn-primary" name="formulario" value="novo">
+                    </form>
 
 @endsection('conteudo')
 
