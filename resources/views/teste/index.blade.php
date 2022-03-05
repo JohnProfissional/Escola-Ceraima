@@ -1,6 +1,7 @@
+
+@section('conteudo')
 @extends('layouts.main')
 @extends('layouts.app')
-@section('conteudo')
 @section('titulo','lista de teste')
 
 
@@ -37,10 +38,7 @@
                     </form> 
                 </td>
                 <td>
-                    <form action="{{route('testes.create')}}" method="post">
-                        @csrf
-                        <input type="submit" class="btn btn-primary" name="formulario" value="novo">
-                    </form>
+                   
                 </td>
                 <td>
                     <form action="{{route('testes.edit', ['id' => $teste->id])}}" method="post">
@@ -52,7 +50,12 @@
           @endforeach
      
      
-    </table>
+    </table><br>
+    
+     <form action="{{route('testes.create')}}" method="post">
+                        @csrf
+                        <input type="submit" class="btn btn-primary" name="formulario" value="novo">
+                    </form>
 
 
     
