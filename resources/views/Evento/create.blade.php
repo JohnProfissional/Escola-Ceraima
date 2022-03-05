@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@include('layouts.main')
 @extends('layouts.app')
 @section('conteudo')
     @if($errors->any())
