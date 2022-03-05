@@ -1,9 +1,10 @@
-@extends('layouts.main')
-@extends('layouts.app')
+
 
 
 
 @section('conteudo')
+@extends('layouts.main')
+@extends('layouts.app')
 @section('titulo','Lista de Usuários')
 
   <table class="table table-sm">
@@ -36,10 +37,7 @@
                     </form> 
                 </td>
                 <td>
-                    <form action="{{route('usuario.create')}}" method="post">
-                        @csrf
-                        <input type="submit" class="btn btn-primary" name="formulario" value="novo">
-                    </form>
+                   
                 </td>
                 <td>
                     <form action="{{route('usuario.edit', ['id' => $usuario->id])}}" method="post">
@@ -51,10 +49,13 @@
           @endforeach
      
      
-    </table>
+    </table><br>
 
 
-    
+     <form action="{{route('usuario.create')}}" method="post">
+                        @csrf
+                        <input type="submit" class="btn btn-primary" name="formulario" value="novo">
+                    </form>
 
 
 @endsection('conteudo')
