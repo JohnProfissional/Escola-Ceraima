@@ -1,7 +1,8 @@
-@extends('layouts.main')
-@extends('layouts.app')
+
 
 @section('conteudo')
+@extends('layouts.main')
+@extends('layouts.app')
 @section('titulo','lista de previsão de entregar')
 
 
@@ -44,10 +45,7 @@
                     </form> 
                 </td>
                 <td>
-                    <form action="{{route('previsaoentregar.create')}}" method="post">
-                        @csrf
-                        <input type="submit" class="btn btn-primary" name="formulario" value="novo">
-                    </form>
+                   
                 </td>
                 <td>
                     <form action="{{route('previsaoentregar.edit', ['id' => $previsaoentregar->id])}}" method="post">
@@ -60,6 +58,10 @@
      
      
     </table>
+     <form action="{{route('previsaoentregar.create')}}" method="post">
+                        @csrf
+                        <input type="submit" class="btn btn-primary" name="formulario" value="novo">
+                    </form>
 
 
     
