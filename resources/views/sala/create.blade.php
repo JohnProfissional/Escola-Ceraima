@@ -1,6 +1,7 @@
+
+@section('conteudo')
 @extends('layouts.main')
 @extends('layouts.app')
-@section('conteudo')
 
 @section('titulo','Cadastro de Sala')
 
