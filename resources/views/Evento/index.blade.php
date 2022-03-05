@@ -1,7 +1,8 @@
+
+@section('conteudo')
 @extends('layouts.main')
 @extends('layouts.app')
 
-@section('conteudo')
 
 <div>
     <table class="table table-sm">
@@ -46,14 +47,15 @@
                 </td>
           @endforeach
           
-           <td>
-                <form action="{{route('evento.create')}}" method="post">
+         
+               </thead> 
+               
+        </table>     
+         <form action="{{route('evento.create')}}" method="post">
                     @csrf
                     <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar um novo evento">
                     </form>
-                </td>
-        </table>          
-    </thead>
+   
      
 @endsection('conteudo')
 
