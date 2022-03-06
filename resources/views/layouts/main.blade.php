@@ -43,15 +43,12 @@
 
 
   </table>
-  <footer>
-        	<br>
+  @yield('footer')
+			<br>
 			<br><br>
             <div id="footer" align="center">
 			copyrigth @Sistema desenvolvido por Robério Fagundes dos Santos
             </div>
-  
-  </footer>
-		
 
 </div>
 
