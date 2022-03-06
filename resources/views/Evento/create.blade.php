@@ -33,5 +33,4 @@
             </form>               
         </div>            
 @endsection('conteudo')
-@section('footer')
-@endsection('footer')
+
