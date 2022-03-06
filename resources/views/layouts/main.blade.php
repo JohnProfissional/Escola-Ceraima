@@ -10,6 +10,7 @@
 	<title>Document</title>
 </head>
 <body>
+@yield('conteudo')<br>
 	<div id="header">
 			<h1>@yield('titulo')</h1>
 			<div id="nav">
@@ -32,7 +33,7 @@
 	 <h4>@yield('subtitulo')</h4>
   <table class="col" id="row">
 
-  	 @yield('conteudo')<br>
+  	 
 
        <div class="row g-3">
         <div class=col>
@@ -43,13 +44,13 @@
 
 
   </table>
-  @yield('footer')
+<footer>
 			<br>
 			<br><br>
             <div id="footer" align="center">
 			copyrigth @Sistema desenvolvido por Robério Fagundes dos Santos
             </div>
-
+</footer>
 </div>
 
 
