@@ -1,5 +1,5 @@
 
-@section('conteudo')
+@section('container')
 @extends('layouts.main')
 @extends('layouts.app')
     @if($errors->any())
