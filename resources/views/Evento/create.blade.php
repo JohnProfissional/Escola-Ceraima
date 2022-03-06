@@ -1,6 +1,6 @@
 
 @section('conteudo')
-@include('layouts.main')
+@extends('layouts.main')
 @extends('layouts.app')
     @if($errors->any())
         <div class="alert alert-danger"> 
