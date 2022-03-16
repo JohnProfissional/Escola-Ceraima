@@ -14,7 +14,7 @@
 	<title>Document</title>
 </head>
 <body>
-@extends('layouts.app')
+@includs('layouts.app')
 
 @yield('conteudo')<br>
 	<div id="header">
