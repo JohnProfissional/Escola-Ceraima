@@ -1,10 +1,10 @@
 
 
 
-
-@section('conteudo')
-@extends('layouts.app')
 @extends('layouts.main')
+@extends('layouts.app')
+@section('conteudo')
+
 
 
 
