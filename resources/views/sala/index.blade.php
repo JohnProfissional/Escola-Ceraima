@@ -5,7 +5,7 @@
 
 @section('conteudo')
 
-@include('layouts.main')
+@extends('layouts.main')
 
 @section('titulo','lista de sala')
 
