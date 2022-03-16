@@ -1,8 +1,8 @@
 
-
+@extends('layouts.app')
 
 @extends('layouts.main')
-@extends('layouts.app')
+
 @section('conteudo')
 
 @section('titulo','lista de sala')
