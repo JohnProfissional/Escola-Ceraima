@@ -1,10 +1,10 @@
 
 
 
-
+@extends('layouts.app')
 @section('conteudo')
 @extends('layouts.main')
-@extends('layouts.app')
+
 
 
 <div class="container">
