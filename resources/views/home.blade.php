@@ -2,10 +2,10 @@
 
 
 
-
-@section('conteudo')
-@extends('layouts.main')
 @extends('layouts.app')
+@extends('layouts.main')
+@section('conteudo')
+
 
 <div class="container">
     <div class="row justify-content-center">
