@@ -1,10 +1,10 @@
 
 
 
-
-@section('conteudo')
 @extends('layouts.main')
 @extends('layouts.app')
+@section('conteudo')
+
 @section('titulo','lista de sala')
 
   <table class="table table-sm">
