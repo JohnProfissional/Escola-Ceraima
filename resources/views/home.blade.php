@@ -1,10 +1,13 @@
 
 
 
+@extends('layouts.app')
 
 @section('conteudo')
 
-@extends('layouts.app')
+
+@extends('layouts.main')
+
 
 
 
@@ -84,4 +87,3 @@
 </div>
 @endsection('conteudo')
 
-@extends('layouts.main')
