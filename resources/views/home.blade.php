@@ -1,8 +1,9 @@
 
 
 
-@extends('layouts.app')
+
 @section('conteudo')
+@extends('layouts.app')
 @extends('layouts.main')
 
 
