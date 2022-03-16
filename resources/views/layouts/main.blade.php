@@ -23,6 +23,7 @@
 					<li><a href="{{route('testes.index')}}">Testes</a> </li>
 					<li><a href="{{route('manutencao.index')}}">Manutenção</a> </li>
 					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
+                    <li><a href="{{route('home')}}">Home</a> </li>
 				</ul>
 			</div>
 	</div>
