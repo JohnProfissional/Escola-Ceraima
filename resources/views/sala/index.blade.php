@@ -1,9 +1,11 @@
 
 @extends('layouts.app')
 
-@include('layouts.main')
+
 
 @section('conteudo')
+
+@include('layouts.main')
 
 @section('titulo','lista de sala')
 
