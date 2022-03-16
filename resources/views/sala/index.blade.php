@@ -5,7 +5,7 @@
 
 @section('conteudo')
 
-@extends('layouts.main')
+
 
 @section('titulo','lista de sala')
 
@@ -14,7 +14,7 @@
         
        
     </div>
-   
+   @extends('layouts.main')
       @foreach ($Sala as $sala)
       <thead>
         <tr>
