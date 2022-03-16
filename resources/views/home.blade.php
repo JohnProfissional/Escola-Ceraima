@@ -2,7 +2,6 @@
 
 
 
-@extends('layouts.app')
 
 <!DOCTYPE html>
 <html>
@@ -15,6 +14,8 @@
 	<title>Document</title>
 </head>
 <body>
+@extends('layouts.app')
+
 @yield('conteudo')<br>
 	<div id="header">
 			<h1>@yield('titulo')</h1>
