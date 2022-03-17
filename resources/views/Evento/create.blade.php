@@ -21,7 +21,7 @@
 			<h1>@yield('titulo')</h1>
 			<div id="nav">
 				<ul id="menu-h">
-                    <li><a href="{{route('Home')}}">Home</a> </li>
+                    <li><a href="{{route('home')}}">Home</a> </li>
 					<li><a href="{{route('evento.index')}}">Eventos</a> </li>
 					<li><a href="{{route('usuario.index')}}">Usuario</a> </li>
 					<li><a href="{{route('reservas.index')}}">Reserva</a> </li>
