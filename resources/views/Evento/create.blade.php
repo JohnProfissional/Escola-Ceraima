@@ -65,10 +65,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-               
-                    <div id="nav">
-                     @csrf
-             <form action="{{route('evento.store')}}" method="post">
+                    <form action="{{route('evento.store')}}" method="post">
                 <div class="row g-3">
                     <div class="row"><h4>cadastro de eventos</h4></div>
                     <div class="col">
@@ -87,6 +84,10 @@
                          <input type="submit" class="btn btn-primary" value="cadastrar">      
                 </div>            
             </form>             
+               
+                    <div id="nav">
+                     @csrf
+             
 		
 		</div>
 
