@@ -31,7 +31,14 @@
 					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
 				</ul>
                 
-                <div id="formulario">
+               
+                
+                
+                
+                
+			</div>
+	</div>
+     <div id="formulario">
                   @if($errors->any())
                     <div class="alert alert-danger"> 
                         <ul>
@@ -62,13 +69,7 @@
                          <input type="submit" class="btn btn-primary" value="cadastrar">      
                 </div>            
             </form>             
-                
-                
-                
-                </div>
-			</div>
-	</div>
-
+        </div>
 
 
 
