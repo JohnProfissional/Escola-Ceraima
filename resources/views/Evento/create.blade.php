@@ -2,7 +2,7 @@
 @extends('layouts.main')
 @extends('layouts.app')
 
-@section('container')
+@section('conteudo')
 
     @if($errors->any())
         <div class="alert alert-danger"> 
@@ -34,5 +34,5 @@
                 </div>            
             </form>               
         </div>            
-@endsection('container')
+@endsection('conteudo')
 
