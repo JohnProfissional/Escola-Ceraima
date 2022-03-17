@@ -68,7 +68,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                @csrf
+               
+                    <div id="nav">
+                     @csrf
              <form action="{{route('evento.store')}}" method="post">
                 <div class="row g-3">
                     <div class="row"><h4>cadastro de eventos</h4></div>
@@ -88,7 +90,6 @@
                          <input type="submit" class="btn btn-primary" value="cadastrar">      
                 </div>            
             </form>             
-                    <div id="nav">
 			<ul id="menu-h">
 
 				<li>
