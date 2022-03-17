@@ -12,6 +12,22 @@
             </ul>   
         </div>        
     @endif
+    
+    <div id="header">
+			<h1>@yield('titulo')</h1>
+			<div id="nav">
+				<ul id="menu-h">
+					<li><a href="{{route('evento.index')}}">Eventos</a> </li>
+					<li><a href="{{route('usuario.index')}}">Usuario</a> </li>
+					<li><a href="{{route('reservas.index')}}">Reserva</a> </li>
+					<li><a href="{{route('sala.index')}}">Sala</a> </li>
+					<li><a href="{{route('patrimonio.index')}}">Patrimonio</a> </li>
+					<li><a href="{{route('testes.index')}}">Testes</a> </li>
+					<li><a href="{{route('manutencao.index')}}">Manutenção</a> </li>
+					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
+				</ul>
+			</div>
+	</div>
          @csrf
              <form action="{{route('evento.store')}}" method="post">
                 <div class="row g-3">
@@ -35,6 +51,6 @@
         </div>            
 @endsection('conteudo')
 
-@extends('layouts.main')
+
 
 
