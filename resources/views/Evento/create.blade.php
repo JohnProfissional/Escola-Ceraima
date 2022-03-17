@@ -16,8 +16,6 @@
 	<title>Document</title>
 </head>
 <body>
-
-<div id="container">
 @include('layouts.app')
 	<div id="header">
 			<h1>@yield('titulo')</h1>
@@ -34,6 +32,9 @@
 				</ul>
 			</div>
 	</div>
+
+<div id="container">
+
 
 <div class="container">
     <div class="row justify-content-center">
