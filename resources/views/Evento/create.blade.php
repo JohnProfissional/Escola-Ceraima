@@ -1,4 +1,4 @@
-@extends('layouts.app')
+
 
 
 @section('conteudo')
@@ -13,7 +13,10 @@
         </div>        
     @endif
     
-    <div id="header">
+    @include('layouts.app')
+
+@yield('conteudo')<br>
+	<div id="header">
 			<h1>@yield('titulo')</h1>
 			<div id="nav">
 				<ul id="menu-h">
@@ -28,6 +31,7 @@
 				</ul>
 			</div>
 	</div>
+
          @csrf
              <form action="{{route('evento.store')}}" method="post">
                 <div class="row g-3">
