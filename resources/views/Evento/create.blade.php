@@ -31,7 +31,17 @@
 					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
 				</ul>
                 
-                <div>
+                <div id="formulario">
+                  @if($errors->any())
+                    <div class="alert alert-danger"> 
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach    
+                        </ul>   
+                    </div>        
+                @endif
+    
                    <form action="{{route('evento.store')}}" method="post">
                      @csrf
                 <div class="row g-3">
@@ -59,54 +69,7 @@
 			</div>
 	</div>
 
-<div id="container">
 
-
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-        
-            <div class="card">
-                <div class="card-header">{{ __('') }}</div>
-                
-    @if($errors->any())
-        <div class="alert alert-danger"> 
-            <ul>
-                @foreach($errors->all() as $error)
-                    <li>{{$error}}</li>
-                @endforeach    
-            </ul>   
-        </div>        
-    @endif
-    
-
-
-           
-                   
-
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                            
-                          
-                        </div>
-                    @endif
-                   
-               
-                    <div id="nav">
-                    
-             
-		
-		</div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 	 <h4>@yield('subtitulo')</h4>
