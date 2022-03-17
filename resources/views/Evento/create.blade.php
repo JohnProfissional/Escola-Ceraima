@@ -18,7 +18,8 @@
 <body>
 @include('layouts.app')
 
-@yield('conteudo')<br>
+
+<div id="container">
 	<div id="header">
 			<h1>@yield('titulo')</h1>
 			<div id="nav">
@@ -34,10 +35,6 @@
 				</ul>
 			</div>
 	</div>
-
-
-
-<div id="container">
 
 <div class="container">
     <div class="row justify-content-center">
@@ -90,11 +87,7 @@
                          <input type="submit" class="btn btn-primary" value="cadastrar">      
                 </div>            
             </form>             
-			<ul id="menu-h">
-
-				<li>
-                             
-			</ul>
+		
 		</div>
 
 
