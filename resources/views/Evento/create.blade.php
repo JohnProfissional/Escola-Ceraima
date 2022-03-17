@@ -38,7 +38,7 @@
                 
 			</div>
 	</div>
-     <div id="formulario">
+     <div class="card-body">
                   @if($errors->any())
                     <div class="alert alert-danger"> 
                         <ul>
