@@ -79,7 +79,7 @@
                 </div>            
             </form>               
         </div>            
-@endsection('conteudo')
+
 
                 <div class="card-body">
                     @if (session('status'))
