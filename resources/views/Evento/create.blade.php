@@ -58,7 +58,17 @@
     
 
 
-         @csrf
+           
+                   
+
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+                @csrf
              <form action="{{route('evento.store')}}" method="post">
                 <div class="row g-3">
                     <div class="row"><h4>cadastro de eventos</h4></div>
@@ -77,17 +87,7 @@
                          <input type="time" class="form-control" name="hora_terminio"><br> 
                          <input type="submit" class="btn btn-primary" value="cadastrar">      
                 </div>            
-            </form>               
-        </div>            
-
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
+            </form>             
                     <div id="nav">
 			<ul id="menu-h">
 
