@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-@extends('layouts.main')
 
 @section('conteudo')
 
@@ -35,4 +34,7 @@
             </form>               
         </div>            
 @endsection('conteudo')
+
+@extends('layouts.main')
+
 
