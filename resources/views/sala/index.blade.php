@@ -10,6 +10,7 @@
 </head>
 <body>
 @include('layouts.app')
+@section('titulo','lista de sala')
 
 	<div id="header">
 			<h1>@yield('titulo')</h1>
@@ -47,14 +48,14 @@
 
 
 
-@section('titulo','lista de sala')
+
 
   <table class="table table-sm">
     <div>
         
        
     </div>
-   @extends('layouts.main')
+ 
       @foreach ($Sala as $sala)
       <thead>
         <tr>
