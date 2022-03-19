@@ -49,10 +49,7 @@
 @section('titulo','Lista de Usuários')
 
   <table class="table table-sm">
-    <div>
-        <caption>Tabela de estagiario</caption>
-       
-    </div>
+ 
    
       @foreach ($Usuario as $usuario)
       <thead>
