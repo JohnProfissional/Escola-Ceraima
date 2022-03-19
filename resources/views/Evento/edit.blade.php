@@ -9,7 +9,7 @@
 	<title>Document</title>
 </head>
 <body>
-@include('layouts.app')
+
 	<div id="header">
 			<h1>@yield('titulo')</h1>
 			<div id="nav">
@@ -54,12 +54,14 @@
                 <input type="date" class="form-control" name="data_inicio" id="nome">                      
                 <label>data de fim</label>
                 <input type="date" class="form-control" name="data_fim" id="nome"><br>
-                <input type="submit" class="btn btn-primary" value="salvar">
+              
       
                 <label>hora de inicio</label>
                 <input type="time" class="form-control" name="hora_inicio" id="nome">
                 <label>hora de fim</label>
                 <input type="time" class="form-control" name="hora_terminio" id="nome"><br>
+                
+                 <input type="submit" class="btn btn-primary" value="salvar">
 				
 	
 	</form>
