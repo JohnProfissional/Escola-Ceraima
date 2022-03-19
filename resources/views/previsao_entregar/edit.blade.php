@@ -10,6 +10,7 @@
 	<title>Document</title>
 </head>
 <body>
+@include('layouts.app')
 
 	@section('titulo','edição de previsao de entregar')
 
