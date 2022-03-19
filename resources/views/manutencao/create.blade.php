@@ -72,7 +72,7 @@
                     <label>patrimonio</label>
                     <select name="cliente_id" id="cliente_id" class="form-control">
                         @foreach($Patrimonio as $patrimonio)
-                            <option value="{{old('$patrimonio->patrimonio_id)}}"> 
+                            <option value="{{old($patrimonio->patrimonio_id)}}"> 
 
                                 {{$patrimonio->nome}} 
 
