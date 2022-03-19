@@ -68,7 +68,8 @@
 
           <td>{{$patrimonio->nome}}</td>
           <td>{{$patrimonio->localizacao}}</td>
-           <td>{{ date("m-d-Y", strtotime($patrimonio->data_manutencao)); }}</td>
+          <td>{{$patrimonio->manutencao->data_manutencao}}</td>
+         
           
              <td>
                    <form action="{{route('patrimonio.delete', ['id' => $patrimonio->id])}}" method="post">
