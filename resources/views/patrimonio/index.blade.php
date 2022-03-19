@@ -55,7 +55,7 @@
           <th scope="col">id</th>
           <th>nome</th><br>
            <th>localização</th><br>
-          <th>data de manutenção</th>
+          <th>quantidade</th>
          <th></th>
          <th></th>
          <th></th>
@@ -68,7 +68,7 @@
 
           <td>{{$patrimonio->nome}}</td>
           <td>{{$patrimonio->localizacao}}</td>
-          <td>{{$patrimonio->manutencao->data_manutencao}}</td>
+          <td>{{$patrimonio->quantidade_patrimonio}}</td>
          
           
              <td>
