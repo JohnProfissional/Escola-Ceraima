@@ -26,11 +26,22 @@
 				</ul>
                 
                
-                        
+                
+                
+                
+                
 			</div>
 	</div>
      <div class="card-body">
-    <div>
+                  @if($errors->any())
+                    <div class="alert alert-danger"> 
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach    
+                        </ul>   
+                    </div>        
+                @endif
     <table class="table table-sm">
         <div>
             @section('titulo','Lista de eventos')
@@ -123,17 +134,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-     
-@endsection('conteudo')
 
     
 </div>
