@@ -96,8 +96,8 @@
 
 
 
-	 <h4>@yield('subtitulo')</h4>
-  <table class="col" id="row">
+
+
 
   	 
 
