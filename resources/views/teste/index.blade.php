@@ -10,6 +10,7 @@
 	<title>Document</title>
 </head>
 <body>
+@include('layouts.app')
 
 	<div id="header">
 			<h1>@yield('titulo')</h1>
