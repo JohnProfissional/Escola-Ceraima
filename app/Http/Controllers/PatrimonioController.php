@@ -50,5 +50,7 @@ class PatrimonioController extends Controller{
             $Patrimonio->quantidade_patrimonio=$request->quantidade_patrimonio;
             $Patrimonio->localizacao=$request->localizacao;
             $Patrimonio->save();
+        
+         return view('patrimonio.index');
     }
 }
