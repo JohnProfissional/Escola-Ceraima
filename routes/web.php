@@ -124,6 +124,7 @@ Route::delete('/previsaoentregar/{id}',[PrevisaoEntregarController::class, 'dest
 
 
 Route::get('/index/patrimonio',[PatrimonioController::class,'index'])->middleware(['auth'])->name('patrimonio.index');
+Route::post('/index/patrimonio',[PatrimonioController::class,'index'])->middleware(['auth'])->name('patrimonio.index');
 
 Route::post('/create/patrimonio',[PatrimonioController::class,'create'])->middleware(['auth'])->name('patrimonio.reservas');
 
