@@ -52,9 +52,7 @@ class PatrimonioController extends Controller{
             $patrimonio->save();
         
         
-           $id = $patrimonio->id;
-                        
-            return view('patrimonio.index', compact('id'))
-                        ->with('success','patrimonio criador com successo.');
+          return view('patrimonio.index')->withTitle('Laravel Magic method.');
+
     }
 }
