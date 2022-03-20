@@ -52,6 +52,6 @@ class PatrimonioController extends Controller{
             $patrimonio->save();
         
         
-          return redirect('patrimonio.index');
+          return redirect('index/patrimonio');
     }
 }
