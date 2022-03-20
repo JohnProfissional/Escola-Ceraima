@@ -94,7 +94,7 @@
     
     <form action="{{route('patrimonio.create')}}" method="post">
                         @csrf
-                        <input type="submit" class="btn btn-primary" name="formulario" value="novo">
+                        <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio">
                     </form>
                     
                    <footer>
