@@ -51,6 +51,11 @@ class PatrimonioController extends Controller{
             $Patrimonio->localizacao=$request->localizacao;
             $Patrimonio->save();
         
-          return view('patrimonio.index');
+        
+        
+           $id = $Patrimonio->id;
+                        
+            return view('patrimonio.index', compact('id'))
+                        ->with('success','patrimonio criador com successo.');
     }
 }
