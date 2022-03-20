@@ -51,6 +51,6 @@ class PatrimonioController extends Controller{
             $Patrimonio->localizacao=$request->localizacao;
             $Patrimonio->save();
         
-         redirect()->route('patrimonio.index',['id' => $Patrimonio->id]);
+          return view('patrimonio.index');
     }
 }
