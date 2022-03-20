@@ -37,7 +37,7 @@ class PatrimonioController extends Controller{
     public function destroy($id){
         $Patrimonio=patrimonio::findOrFail($id);
         $Patrimonio->delete();
-        return view('patrimonio.index');
+         return redirect('index/patrimonio');
     }
 
        
