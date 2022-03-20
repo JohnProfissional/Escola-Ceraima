@@ -26,12 +26,7 @@
 					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
 				</ul>
                 
-               
-       
-                
-			</div>
-	</div>
-     <div class="card-body">
+                 <div class="card-body">
                   @if($errors->any())
                     <div class="alert alert-danger"> 
                         <ul>
@@ -91,6 +86,13 @@
                
           @endforeach
     </table><br>
+                
+               
+       
+                
+			</div>
+	</div>
+    
     
     <form action="{{route('patrimonio.create')}}" method="post">
                         @csrf
