@@ -44,16 +44,15 @@ class PatrimonioController extends Controller{
 
     public function store(Request $request){
 
-            $Patrimonio = new patrimonio();
-            $Patrimonio->nome=$request->nome;
-            $Patrimonio->tipo_patrimonio =$request->tipo_patrimonio;
-            $Patrimonio->quantidade_patrimonio=$request->quantidade_patrimonio;
-            $Patrimonio->localizacao=$request->localizacao;
-            $Patrimonio->save();
+            $patrimonio = new patrimonio();
+            $patrimonio->nome=$request->nome;
+            $patrimonio->tipo_patrimonio =$request->tipo_patrimonio;
+            $patrimonio->quantidade_patrimonio=$request->quantidade_patrimonio;
+            $patrimonio->localizacao=$request->localizacao;
+            $patrimonio->save();
         
         
-        
-           $id = $Patrimonio->id;
+           $id = $patrimonio->id;
                         
             return view('patrimonio.index', compact('id'))
                         ->with('success','patrimonio criador com successo.');
