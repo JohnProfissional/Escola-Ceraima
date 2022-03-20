@@ -52,7 +52,6 @@ class PatrimonioController extends Controller{
             $patrimonio->save();
         
         
-          return view('patrimonio.index')->withTitle('Laravel Magic method.');
-
+          return redirect('patrimonio.index');
     }
 }
