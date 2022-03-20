@@ -37,7 +37,13 @@
                     </div>        
                 @endif
 
-@section('titulo','lista de patrimonio')
+
+               
+       
+                
+			</div>
+	</div>
+    @section('titulo','lista de patrimonio')
 
   <table class="table table-sm">
     <div>
@@ -87,12 +93,6 @@
           @endforeach
     </table><br>
                 
-               
-       
-                
-			</div>
-	</div>
-    
     
     <form action="{{route('patrimonio.create')}}" method="post">
                         @csrf
