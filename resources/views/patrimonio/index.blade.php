@@ -26,7 +26,7 @@
 					<li><a href="{{route('manutencao.index')}}">Manutenção</a> </li>
 					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
 				</ul>
-              </div>   
+           
                      
                  <table class="table table-sm">
       @foreach ($Patrimonio as $patrimonio)
@@ -87,7 +87,7 @@
     
      </div> 
        
-    </div>
+<div>
    
      
    
@@ -97,14 +97,15 @@
 			<br><br>
             <div id="footer" align="center">
 			copyrigth @Sistema desenvolvido por Robério Fagundes dos Santos
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
             </div>
 </footer>
 </div>
 
 
 
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+	
 
 
 
