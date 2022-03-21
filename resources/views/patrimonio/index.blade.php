@@ -45,9 +45,7 @@
   
         <form action="{{route('patrimonio.create')}}" method="post">
         @csrf
-        <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio">
-     </form>
-     <table class="table table-sm">
+         <table class="table table-sm">
       @foreach ($Patrimonio as $patrimonio)
       <thead>
         <tr>
@@ -92,6 +90,9 @@
           @endforeach
     </table><br>
                 
+        <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio">
+     </form>
+    
     
      </div> 
        
