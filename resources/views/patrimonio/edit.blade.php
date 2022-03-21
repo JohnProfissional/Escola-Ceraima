@@ -44,23 +44,54 @@
                         </ul>   
                     </div>        
                 @endif
-
-@section('titulo','edição de patrimonio')
-
-<body>
-	<div class="row g-3">
-        <div class="col">
+    
+ 
            	<form action="{{route('patrimonio.edit', ['id' => $Patrimonio->id])}}" method="post">
-				<h4>Patrimonio</h4><br>
 				@csrf
 				@method('PUT')
-
-				<input type="submit" class="btn btn-primary" value="editar">
-			</form>
+				<label for="nome">nome</label>
+				{{-- Form Section 1 --}}
+				<input type="text" name="nome" class="form-control" value="{{$Patrimonio->nome}}">
+                
+				<label>tipo do patrimonio</label>
+                <input type="text" class="form-control" name="tipo_patrimonio" value="{{$Patrimonio->tipo_patrimonio}}>    
+                
+                <label>quantidade de patrimonio</label>
+                <input type="text" class="form-control" name="quantidade_patrimonio" value="{{$Patrimonio->quantidade_patrimonio}}><br>
+                
+                  <label>lozalização</label>
+                <input type="text" class="form-control" name="localizacao" value="{{$Patrimonio->localizacao}}><br>
+                
+              
+      
+                <label>hora de inicio</label>
+                <input type="time" class="form-control" name="hora_inicio" id="nome">
+                <label>hora de fim</label>
+                <input type="time" class="form-control" name="hora_terminio" id="nome"><br>
+                
+                 <input type="submit" class="btn btn-primary" value="salvar">
+				
+	
+	</form>
  		</div>
-    </div>
-		
+    </div>	
 </body>
+
+
+	 <h4>@yield('subtitulo')</h4>
+  <table class="col" id="row">
+
+  	 
+
+       <div class="row g-3">
+        <div class=col>
+
+        </div>
+
+       </div>
+
+
+  </table>
 <footer>
 			<br>
 			<br><br>
@@ -81,3 +112,5 @@
 
 </body>
 </html>
+
+
