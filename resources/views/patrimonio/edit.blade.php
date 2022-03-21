@@ -54,7 +54,7 @@
 				<input type="text" name="nome" class="form-control" value="{{$Patrimonio->nome}}">
                 
 				<label>tipo do patrimonio</label>
-                <input type="text" class="form-control" name="tipo_patrimonio" value="{{$Patrimonio->tipo_patrimonio}}>    
+                <input type="text" class="form-control" name="tipo_patrimonio" value="{{$Patrimonio->tipo_patrimonio}}">    
                 
                 <label>quantidade de patrimonio</label>
                 <input type="text" class="form-control" name="quantidade_patrimonio" value="{{$Patrimonio->quantidade_patrimonio}}><br>
@@ -62,14 +62,8 @@
                   <label>lozalização</label>
                 <input type="text" class="form-control" name="localizacao" value="{{$Patrimonio->localizacao}}><br>
                 
-              
-      
-                <label>hora de inicio</label>
-                <input type="time" class="form-control" name="hora_inicio" id="nome">
-                <label>hora de fim</label>
-                <input type="time" class="form-control" name="hora_terminio" id="nome"><br>
                 
-                 <input type="submit" class="btn btn-primary" value="salvar">
+                 <input type="submit" class="btn btn-primary" value="alterar">
 				
 	
 	</form>
