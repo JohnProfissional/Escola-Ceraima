@@ -55,6 +55,7 @@
           <th>nome</th><br>
            <th>localização</th><br>
           <th>quantidade</th>
+          <th>tipo do patrimonio</th>
          <th></th>
          <th></th>
          <th></th>
@@ -68,6 +69,7 @@
           <td>{{$patrimonio->nome}}</td>
           <td>{{$patrimonio->localizacao}}</td>
           <td>{{$patrimonio->quantidade_patrimonio}}</td>
+          <td>{{$patrimonio->tipo_patrimonio}}</td>
          
           
              <td>
