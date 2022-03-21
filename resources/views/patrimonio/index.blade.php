@@ -39,10 +39,10 @@
                 @endif          
   
     </div>
-	</div>
+
     @section('titulo','lista de patrimonio')
 
-  <table class="table table-sm">
+  
     <div>
         <form action="{{route('patrimonio.create')}}" method="post">
         @csrf
