@@ -60,7 +60,7 @@
                 <input type="text" class="form-control" name="quantidade_patrimonio" value="{{$Patrimonio->quantidade_patrimonio}}><br>
                 
                   <label>lozalização</label>
-                <input type="text" class="form-control" name="localizacao" value="{{$Patrimonio->localizacao}}><br>
+                <input type="text" class="form-control" name="localizacao" value="{{$Patrimonio->localizacao}}"><br>
                 
                 
                  <input type="submit" class="btn btn-primary" value="alterar">
