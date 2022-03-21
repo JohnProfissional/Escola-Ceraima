@@ -26,7 +26,7 @@
 					<li><a href="{{route('manutencao.index')}}">Manutenção</a> </li>
 					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
 				</ul>
-                
+              </div>   
                  <div class="card-body">
                   @if($errors->any())
                     <div class="alert alert-danger"> 
@@ -38,12 +38,11 @@
                     </div>        
                 @endif          
   
-    </div>
+   
 
     @section('titulo','lista de patrimonio')
 
   
-    <div>
         <form action="{{route('patrimonio.create')}}" method="post">
         @csrf
         <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio">
