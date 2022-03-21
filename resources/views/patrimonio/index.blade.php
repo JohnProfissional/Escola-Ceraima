@@ -48,6 +48,7 @@
         @csrf
         <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio">
      </form>
+     <table class="table table-sm">
       @foreach ($Patrimonio as $patrimonio)
       <thead>
         <tr>
