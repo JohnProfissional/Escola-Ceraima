@@ -56,10 +56,10 @@
 				<label>tipo do patrimonio</label>
                 <input type="text" class="form-control" name="tipo_patrimonio" value="{{$Patrimonio->tipo_patrimonio}}">    
                 
-                <label>quantidade de patrimonio</label>
-                <input type="text" class="form-control" name="quantidade_patrimonio" value="{{$Patrimonio->quantidade_patrimonio}}><br>
+                <label>quantidade de patrimonio</label><br>
+                <input type="text" class="form-control" name="quantidade_patrimonio" value="{{$Patrimonio->quantidade_patrimonio}}"><br>
                 
-                  <label>lozalização</label>
+                 <label>lozalização</label><br>
                 <input type="text" class="form-control" name="localizacao" value="{{$Patrimonio->localizacao}}"><br>
                 
                 
