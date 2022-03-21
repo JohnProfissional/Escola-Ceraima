@@ -27,16 +27,7 @@
 					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
 				</ul>
               </div>   
-                 <div class="card-body">
-                  @if($errors->any())
-                    <div class="alert alert-danger"> 
-                        <ul>
-                            @foreach($errors->all() as $error)
-                                <li>{{$error}}</li>
-                            @endforeach    
-                        </ul>   
-                    </div>        
-                @endif          
+                     
                  <table class="table table-sm">
       @foreach ($Patrimonio as $patrimonio)
       <thead>
