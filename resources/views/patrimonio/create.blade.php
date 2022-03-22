@@ -178,37 +178,28 @@
                     
                        
                             
-                                      <div class="row g-3">
+                            
                                    
                                         <form class="row g-3" action="{{route('patrimonio.store')}}" method="post">
           
                                             @csrf
                                         
                                           <label for="formGroupExampleInput2" class="form-label">nome</label><br>
-                                          <div class="col-md-6">
+                                          <div class="col-md-4">
                                            <label for="inputPassword4" class="form-label">nome</label>
                                           <input type="text" class="form-control" name="nome" id="nome">
                                         
-                                          </div>
-                                          
-                                          <div class="col-md-6">
+                                        
                                            <label for="inputPassword4" class="form-label">tipo de patrimonio</label>
                                           <input type="text" class="form-control" name="tipo_patrimonio" id="nome">
-                                        </div>
-
-
-
-
-                                       <div class="col-md-6">
+                                  
                                            <label for="inputPassword4" class="form-label">quantidade de patrimonio</label>
                                           <input type="text" class="form-control" name="quantidade_patrimonio" id="nome"><br>
-                                        </div>
-
-                                      <div class="col-md-6">
+                                       
                                       
                                            <label for="inputPassword4" class="form-label">localizacao</label>
                                            <input type="text" class="form-control" name="localizacao" id="nome"><br>
-                                      </div>
+                                     
                                       
 
                                            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
