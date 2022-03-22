@@ -180,7 +180,10 @@
                             
                             <div class="row g-3">
                                    
-                                      <form action="{{route('patrimonio.store')}}" method="post">
+                                      
+
+                                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                          <form action="{{route('patrimonio.store')}}" method="post">
         
                                           @csrf
                                        
@@ -195,15 +198,14 @@
 
                                         <label>localizacao</label> 
                                          <input type="text" class="form-control" name="localizacao" id="nome" style="width:80px"><br>
-
-                                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                                             <button type="submit" class="btn btn-primary">Adicionar</button>
+                                         </form>
                                          </div>
                                             
                                             
                                    
                         
-                        </form>
+                       
     
                     </div>
           
