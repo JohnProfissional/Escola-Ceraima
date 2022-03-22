@@ -46,7 +46,7 @@
                 @endif
     
  
-           <form action="{{route('patrimonio.update', ['id' => $patrimonio->id])}}" method="post">
+           <form action="{{route('patrimonio.update', ['id' => $Patrimonio->id])}}" method="post">
 				@csrf
 				@method('PUT')
 				<label for="nome">nome</label>
