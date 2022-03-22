@@ -27,8 +27,7 @@
 					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
 				</ul>
             </div>
-    </div>
-    <table class="table table-striped table-hover">
+             <table class="table table-striped table-hover">
    @foreach ($Patrimonio as $patrimonio)
           <thead>
             <tr>
@@ -72,6 +71,8 @@
 
               @endforeach
     </table>
+    </div>
+   
     @section('titulo','lista de patrimonio')                
     <table class="table table-sm">
           @foreach ($Patrimonio as $patrimonio)
