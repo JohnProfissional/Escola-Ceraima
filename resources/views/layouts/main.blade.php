@@ -10,13 +10,7 @@
 	<title>Document</title>
 </head>
 <body>
-
-
- 
- <div id="container">
- 
- @yield('conteudo')<br>
-		<div id="header">
+<div id="header" class="row">
 
 			<h1>@yield('titulo')</h1>
 
@@ -37,6 +31,12 @@
 			</ul>
             </div>
             </div>
+		
+
+ 
+ <div id="container">
+ 
+ @yield('conteudo')<br>
 		
 
 
