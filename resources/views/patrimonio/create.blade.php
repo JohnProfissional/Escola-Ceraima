@@ -271,13 +271,7 @@
             <label for="fornecedor_id">fornecedor</label><br>
             {{-- pega a variavel passada pelo metodo create do controller --}}
 
-            <select name="fornecedor_id" class="form-control" name="fornecedor_id">
-                @foreach($Fornecedor as $fornecedor)
-                    <option  class="form-control" name="fornecedor_id">
-                        {{ $fornecedor->razaosocial }}
-                    </option>
-                @endforeach
-            </select><br>
+            
 
             <input type="submit" class="btn btn-primary" value="cadastrar">
 
