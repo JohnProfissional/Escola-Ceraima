@@ -10,7 +10,7 @@
 	<title>Document</title>
 </head>
 <body>
-   @include('layouts.app')  
+   
   
 		
     <div id="container">
