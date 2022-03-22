@@ -1,8 +1,9 @@
 
-@extends('layouts.main')
-@extends('layouts.app')
+
 
 @section('conteudo')
+@extends('layouts.main')
+@extends('layouts.app')
  <table class="table table-sm">
  @section('titulo','lista de patrimonio') 
 
