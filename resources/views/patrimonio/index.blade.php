@@ -26,11 +26,7 @@
 					<li><a href="{{route('manutencao.index')}}">Manutenção</a> </li>
 					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
 				</ul>
-            </div>
-            
-    </div>
-    <div>
-   
+                <div class="conteudo">
     @section('titulo','lista de patrimonio')                
     <table class="table table-sm">
           @foreach ($Patrimonio as $patrimonio)
@@ -79,6 +75,10 @@
 
         </div>
 
+    
+            </div>
+            
+    </div>
     
 
   
