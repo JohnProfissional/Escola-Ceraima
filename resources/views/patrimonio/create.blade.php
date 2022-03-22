@@ -180,7 +180,7 @@
                             
                                       <div class="row g-3">
                                    
-                                        <form action="{{route('patrimonio.store')}}" method="post">
+                                        <form class="row g-3" action="{{route('patrimonio.store')}}" method="post">
           
                                             @csrf
                                         
