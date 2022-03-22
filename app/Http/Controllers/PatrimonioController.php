@@ -17,13 +17,15 @@ class PatrimonioController extends Controller{
     }
 
     public function edit($id){
-        $Patrimonio = patrimonio::findorFail($id);
+        $Patrimonio = Patrimonio::findorFail($id);
         return view('patrimonio.edit',['Patrimonio'=>$Patrimonio]);
     }
 
-    public function update(Request $request){
-        patrimonio::find($request->id)->update($request->except('_token'));
-        return redirect('index/patrimonio')->with('msg', 'alteração realdizado com sucesso');
+
+    
+     public function update(Request $request){
+        Patrimonio::find($request->id)->update($request->except('_token'));
+         return redirect('index/patrimonio')->with('msg', 'alteração realdizado com sucesso');
 
     }
 
