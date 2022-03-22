@@ -1,4 +1,5 @@
-
+@extends('layouts.main')
+@extends('layouts.app')
 
  <form action="{{route('patrimonio.create')}}" method="post">
         @csrf
@@ -6,8 +7,7 @@
         <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio">
      </form>
 @section('conteudo')
-@extends('layouts.main')
-@extends('layouts.app')
+
 
  <table class="table table-sm">
  @section('titulo','lista de patrimonio') 
