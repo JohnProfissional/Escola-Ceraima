@@ -2,16 +2,12 @@
 @extends('layouts.main')
 @extends('layouts.app')
 
-
-
-
-
-
 @section('conteudo')
 
     
     
-    @section('titulo','lista de patrimonio')                
+    @section('titulo','lista de patrimonio') 
+    <div>
     <table class="table table-sm">
           @foreach ($Patrimonio as $patrimonio)
           <thead>
@@ -57,10 +53,6 @@
               @endforeach
         </table><br>
 
-        </div>
-
-    
-            </div>
             
     </div>
     
