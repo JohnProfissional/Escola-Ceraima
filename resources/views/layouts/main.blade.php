@@ -12,8 +12,7 @@
 <body>
  
  <div id="container">
- @yield('conteudo')<br>
-		<div id="header">
+ <div id="header">
 
 			<h1>@yield('titulo')</h1>
 
@@ -34,6 +33,8 @@
 			</ul>
             </div>
             </div>
+ @yield('conteudo')<br>
+		
 		
 
 
