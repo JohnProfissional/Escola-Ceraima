@@ -36,8 +36,9 @@
      </div>
      
 	</div>
+     <div id="container">
        @yield('conteudo')<br>
-
+    </div>
   @yield('footer')
 			<br>
 			<br><br>
