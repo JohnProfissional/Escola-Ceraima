@@ -185,20 +185,20 @@
                                             @csrf
                                         
                                           <label for="formGroupExampleInput2" class="form-label">nome</label><br>
+                                           <label for="inputPassword4" class="form-label">nome</label>
                                           <input type="text" class="form-control" name="nome" id="nome">
                                         
 
-                                          <label for="formGroupExampleInput2" class="form-label">tipo_patrimonio</label><br>
+                            
+                                           <label for="inputPassword4" class="form-label">tipo de patrimonio</label>
                                           <input type="text" class="form-control" name="tipo_patrimonio" id="nome">
 
                                        
-                  
-                                          <label for="formGroupExampleInput2" class="form-label">quantidade de patrimonio</label><br>
+                                           <label for="inputPassword4" class="form-label">quantidade de patrimonio</label>
                                           <input type="text" class="form-control" name="quantidade_patrimonio" id="nome"><br>
 
                                       
-
-                                          <label for="formGroupExampleInput2" class="form-label">localizacao</label> 
+                                           <label for="inputPassword4" class="form-label">localizacao</label>
                                            <input type="text" class="form-control" name="localizacao" id="nome"><br>
 
                                       
