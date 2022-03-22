@@ -11,10 +11,12 @@
 </head>
 <body>
    
-            
+    <div id="container">
+        @include('layouts.app')
+    </div>
 		
     <div id="container">
-    @include('layouts.app')
+    
      <div id="header" class="row">
       
 
