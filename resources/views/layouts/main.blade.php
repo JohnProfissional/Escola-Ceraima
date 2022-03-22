@@ -32,8 +32,9 @@
 			</ul>
         </div>
         
-        @yield('conteudo')<br>
+      
      </div>
+       @yield('conteudo')<br>
 
   @yield('footer')
 			<br>
