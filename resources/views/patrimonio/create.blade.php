@@ -183,7 +183,7 @@
                                         <form class="row g-3" action="{{route('patrimonio.store')}}" method="post">
           
                                             @csrf
-                                        
+                                        <div class="col-md-4">
                                           <label for="formGroupExampleInput2" class="form-label">nome</label><br>
                                           <div class="col-md-4">
                                            <label for="inputPassword4" class="form-label">nome</label>
@@ -205,7 +205,7 @@
                                            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                                               <button type="submit" class="btn btn-primary">Adicionar</button>
                                            </div>
-                                              
+                                         </div>     
                                             
                                     </div>
                         
