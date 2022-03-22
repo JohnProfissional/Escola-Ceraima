@@ -1,9 +1,10 @@
 
 @extends('layouts.main')
 @extends('layouts.app')
-@section('titulo','lista de patrimonio') 
 
 @section('conteudo')
+ <table class="table table-sm">
+ @section('titulo','lista de patrimonio') 
 
   
           @foreach ($Patrimonio as $patrimonio)
@@ -61,7 +62,7 @@
         <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio">
      </form>
     
-    
+    </table>
      
 
    
