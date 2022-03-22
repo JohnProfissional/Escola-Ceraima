@@ -5,11 +5,7 @@
 
 @section('conteudo')
 
-    
-    
-    
-    
-    <table class="table table-sm">
+  
           @foreach ($Patrimonio as $patrimonio)
           <thead>
             <tr>
@@ -52,10 +48,10 @@
                     </td>
 
               @endforeach
-        </table><br>
+       
 
             
-    </div>
+ 
     
 
   
