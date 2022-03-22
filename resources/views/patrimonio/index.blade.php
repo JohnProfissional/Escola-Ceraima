@@ -1,4 +1,4 @@
-@include('layouts.app')  
+@extends('layouts.app')  
 
 <form action="{{route('patrimonio.create')}}" method="post">
         @csrf
