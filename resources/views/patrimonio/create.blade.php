@@ -168,44 +168,58 @@
  
       
                       
+            <h2>Cadastre-se os dados do patrimonio</h2><br>
            
-           
-             
+                <div class="mb-3">
+                    <div class="pull-right">
                        
                         <a class="btn btn-primary" href="">Voltar</a>
                     </div>
                     
                        
                             
-                         
+                                      <div class="row g-3">
                                    
                                       <form action="{{route('patrimonio.store')}}" method="post">
-                                         <h2>Cadastre-se os dados do patrimonio</h2><br>
         
                                           @csrf
-                                       
+                                       <div class="row g-3">    
                                         <label for="nome">nome</label><br>
-                                        <input type="text" class="form-control" name="nome" id="nome" style="width:80px">
+                                        <input type="text" class="form-control" name="nome" id="nome">
+                                      </div>
+                                      <div class="row g-3">    
 
                                         <label>tipo_patrimonio</label><br>
-                                        <input type="text" class="form-control" name="tipo_patrimonio" id="nome" style="width:80px">
+                                        <input type="text" class="form-control" name="tipo_patrimonio" id="nome">
 
+                                      </div>
+
+                                      <div class="row g-3">
+                
                                         <label>quantidade de patrimonio</label><br>
-                                        <input type="text" class="form-control" name="quantidade_patrimonio" id="nome" style="width:80px"><br>
+                                        <input type="text" class="form-control" name="quantidade_patrimonio" id="nome"><br>
+
+                                      </div>
+
+                                      <div class="row g-3">
 
                                         <label>localizacao</label> 
-                                         <input type="text" class="form-control" name="localizacao" id="nome" style="width:80px"><br>
+                                         <input type="text" class="form-control" name="localizacao" id="nome"><br>
+
+                                      </div>
+
+                                      <div class="row g-3">
 
                                          <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                                             <button type="submit" class="btn btn-primary">Adicionar</button>
                                          </div>
                                             
                                             
-                                   
+                                    </div>
                         
                         </form>
     
-             
+                    </div>
           
       
                             
@@ -218,7 +232,15 @@
 
 
 
-                        
+                            
+                                     
+            
+                
+
+            </div>
+        </div>
+    </div>
+</div>
 <div class="tile-footer">
    
   </div>
