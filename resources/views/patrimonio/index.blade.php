@@ -42,7 +42,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <div>
+                   <div class="container">
                          <form action="{{route('patrimonio.create')}}" method="post">
         @csrf
         
