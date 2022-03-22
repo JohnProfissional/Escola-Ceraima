@@ -10,8 +10,9 @@
 	<title>Document</title>
 </head>
 <body>
- @yield('conteudo')<br>
+ 
  <div id="container">
+ @yield('conteudo')<br>
 		<div id="header">
 
 			<h1>@yield('titulo')</h1>
