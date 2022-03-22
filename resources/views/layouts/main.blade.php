@@ -11,10 +11,11 @@
 </head>
 <body>
    
-             @yield('conteudo')<br>
+            
 		
     <div id="container">
      <div id="header" class="row">
+      
 
 			<h1>@yield('titulo')</h1>
 	    <div id="nav">
@@ -30,6 +31,8 @@
                     <li><a href="{{route('home')}}">Home</a> </li>
 			</ul>
         </div>
+        
+        @yield('conteudo')<br>
      </div>
 
   @yield('footer')
