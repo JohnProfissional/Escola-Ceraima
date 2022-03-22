@@ -164,7 +164,6 @@
         </ul>
       </div>
       
- include('layout.app')
 
  <x-slot name="header">
  
@@ -172,7 +171,6 @@
                       
             <h2>Cadastre-se os dados do patrimonio</h2><br>
            
-                <div class="mb-3">
                     <div class="pull-right">
                        
                         <a class="btn btn-primary" href="">Voltar</a>
@@ -182,40 +180,33 @@
                             
                                       <div class="row g-3">
                                    
-                                      <form action="{{route('patrimonio.store')}}" method="post">
-        
-                                          @csrf
-                                       <div class="row g-3">    
-                                        <label for="formGroupExampleInput2" class="form-label">nome</label><br>
-                                        <input type="text" class="form-control" name="nome" id="nome">
-                                      </div>
-                                      <div class="row g-3">    
+                                        <form action="{{route('patrimonio.store')}}" method="post">
+          
+                                            @csrf
+                                        
+                                          <label for="formGroupExampleInput2" class="form-label">nome</label><br>
+                                          <input type="text" class="form-control" name="nome" id="nome">
+                                        
 
-                                        <label for="formGroupExampleInput2" class="form-label">tipo_patrimonio</label><br>
-                                        <input type="text" class="form-control" name="tipo_patrimonio" id="nome">
+                                          <label for="formGroupExampleInput2" class="form-label">tipo_patrimonio</label><br>
+                                          <input type="text" class="form-control" name="tipo_patrimonio" id="nome">
 
-                                      </div>
+                                       
+                  
+                                          <label for="formGroupExampleInput2" class="form-label">quantidade de patrimonio</label><br>
+                                          <input type="text" class="form-control" name="quantidade_patrimonio" id="nome"><br>
 
-                                      <div class="row g-3">
-                
-                                        <label for="formGroupExampleInput2" class="form-label">quantidade de patrimonio</label><br>
-                                        <input type="text" class="form-control" name="quantidade_patrimonio" id="nome"><br>
+                                      
 
-                                      </div>
+                                          <label for="formGroupExampleInput2" class="form-label">localizacao</label> 
+                                           <input type="text" class="form-control" name="localizacao" id="nome"><br>
 
-                                      <div class="row g-3">
+                                      
 
-                                        <label for="formGroupExampleInput2" class="form-label">localizacao</label> 
-                                         <input type="text" class="form-control" name="localizacao" id="nome"><br>
-
-                                      </div>
-
-                                      <div class="row g-3">
-
-                                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                                            <button type="submit" class="btn btn-primary">Adicionar</button>
-                                         </div>
-                                            
+                                           <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                              <button type="submit" class="btn btn-primary">Adicionar</button>
+                                           </div>
+                                              
                                             
                                     </div>
                         
