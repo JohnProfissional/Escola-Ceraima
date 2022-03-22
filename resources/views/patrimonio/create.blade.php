@@ -184,26 +184,26 @@
         
                                           @csrf
                                        <div class="row g-3">    
-                                        <label for="nome">nome</label><br>
+                                        <label for="formGroupExampleInput2" class="form-label">nome</label><br>
                                         <input type="text" class="form-control" name="nome" id="nome">
                                       </div>
                                       <div class="row g-3">    
 
-                                        <label>tipo_patrimonio</label><br>
+                                        <label for="formGroupExampleInput2" class="form-label">tipo_patrimonio</label><br>
                                         <input type="text" class="form-control" name="tipo_patrimonio" id="nome">
 
                                       </div>
 
                                       <div class="row g-3">
                 
-                                        <label>quantidade de patrimonio</label><br>
+                                        <label for="formGroupExampleInput2" class="form-label">quantidade de patrimonio</label><br>
                                         <input type="text" class="form-control" name="quantidade_patrimonio" id="nome"><br>
 
                                       </div>
 
                                       <div class="row g-3">
 
-                                        <label>localizacao</label> 
+                                        <label for="formGroupExampleInput2" class="form-label">localizacao</label> 
                                          <input type="text" class="form-control" name="localizacao" id="nome"><br>
 
                                       </div>
