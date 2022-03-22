@@ -1,4 +1,4 @@
-@extends('layouts.app')
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,5 +60,5 @@
 
 </body>
 </html>
-
+@extends('layouts.app')
 
