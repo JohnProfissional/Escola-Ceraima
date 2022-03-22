@@ -23,7 +23,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-@extends('layouts.main')
+@include('layouts.main')
 
 
    
