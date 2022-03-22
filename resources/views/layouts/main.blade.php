@@ -29,10 +29,11 @@
 
 
 			</ul>
+             @yield('conteudo')<br>
+		
              <div id="container">
  
- @yield('conteudo')<br>
-		
+
 
 
 
