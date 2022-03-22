@@ -7,6 +7,8 @@
     
     
     @section('titulo','lista de patrimonio') 
+    <br>
+    <br>
     <div>
     <table class="table table-sm">
           @foreach ($Patrimonio as $patrimonio)
