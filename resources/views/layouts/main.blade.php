@@ -29,6 +29,8 @@
 
 
 			</ul>
+            </div>
+            </div>
              @yield('conteudo')<br>
 		
              <div id="container">
