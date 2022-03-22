@@ -23,8 +23,7 @@ class PatrimonioController extends Controller{
 
     public function update(Request $request){
         patrimonio::find($request->id)->update($request->except('_token'));
-        return redirect('index/manutencao')->with('msg', 'alteração realdizado com sucesso');
-
+        return view('patrimonio.index',compact('patrimonio'));
     }
 
 
