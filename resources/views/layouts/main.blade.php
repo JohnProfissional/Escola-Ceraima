@@ -10,13 +10,15 @@
 	<title>Document</title>
 </head>
 <body>
-<div id="header" class="row">
+   
+             @yield('conteudo')<br>
+		
+    <div id="container">
+     <div id="header" class="row">
 
 			<h1>@yield('titulo')</h1>
-
-			<div id="nav">
+	    <div id="nav">
 			<ul id="menu-h">
-
 				<li><a href="{{route('evento.index')}}">Eventos</a> </li>
 					<li><a href="{{route('usuario.index')}}">Usuario</a> </li>
 					<li><a href="{{route('reservas.index')}}">Reserva</a> </li>
@@ -26,26 +28,15 @@
 					<li><a href="{{route('manutencao.index')}}">Manutenção</a> </li>
 					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
                     <li><a href="{{route('home')}}">Home</a> </li>
-
-
 			</ul>
-            </div>
-            </div>
-             @yield('conteudo')<br>
-		
-             <div id="container">
- 
+        </div>
+     </div>
 
-
-
-
-
-	
   @yield('footer')
 			<br>
 			<br><br>
             <div id="footer" align="center">
-			copyrigth @Sistema desenvolvido por Robério Fagundes dos Santos
+			    copyrigth @Sistema desenvolvido por Robério Fagundes dos Santos
             </div>
 
         </div>
