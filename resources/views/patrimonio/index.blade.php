@@ -26,56 +26,101 @@
 					<li><a href="{{route('manutencao.index')}}">Manutenção</a> </li>
 					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
 				</ul>
-           
-                     
-                 <table class="table table-sm">
-      @foreach ($Patrimonio as $patrimonio)
-      <thead>
-        <tr>
-          <th scope="col">id</th>
-          <th>nome</th><br>
-           <th>localização</th><br>
-          <th>quantidade</th>
-          <th>tipo do patrimonio</th>
-         <th></th>
-         <th></th>
-         <th></th>
-          
+            </div>
+    </div>
+    <table class="table table-striped table-hover">
+   @foreach ($Patrimonio as $patrimonio)
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th>nome</th><br>
+               <th>localização</th><br>
+              <th>quantidade</th>
+              <th>tipo do patrimonio</th>
+             <th></th>
+             <th></th>
+             <th></th>
 
-        </tr>
-      </thead>
-       
-            <td scope="row">{{$patrimonio->id}}</td>
 
-          <td>{{$patrimonio->nome}}</td>
-          <td>{{$patrimonio->localizacao}}</td>
-          <td>{{$patrimonio->quantidade_patrimonio}}</td>
-          <td>{{$patrimonio->tipo_patrimonio}}</td>
-         
-          
-             <td>
-                   <form action="{{route('patrimonio.delete', ['id' => $patrimonio->id])}}" method="post">
-                    @csrf
-                    @method('DELETE')   
-                    <input type="submit" class="btn btn-primary" value="deletar">
-                    </form> 
-                </td>
-                <td>
-                    
-                </td>
-                <td>
-                    <form action="{{route('patrimonio.edit', ['id' => $patrimonio->id])}}" method="post">
+            </tr>
+          </thead>
+
+                <td scope="row">{{$patrimonio->id}}</td>
+
+              <td>{{$patrimonio->nome}}</td>
+              <td>{{$patrimonio->localizacao}}</td>
+              <td>{{$patrimonio->quantidade_patrimonio}}</td>
+              <td>{{$patrimonio->tipo_patrimonio}}</td>
+
+
+                 <td>
+                       <form action="{{route('patrimonio.delete', ['id' => $patrimonio->id])}}" method="post">
                         @csrf
-                        <input type="submit" class="btn btn-primary" name="formulario" value="alterar">
-                    </form>
-                </td>
-               
-          @endforeach
-    </table><br>
-                
-   
+                        @method('DELETE')   
+                        <input type="submit" class="btn btn-primary" value="deletar">
+                        </form> 
+                    </td>
+                    <td>
 
-    @section('titulo','lista de patrimonio')
+                    </td>
+                    <td>
+                        <form action="{{route('patrimonio.edit', ['id' => $patrimonio->id])}}" method="post">
+                            @csrf
+                            <input type="submit" class="btn btn-primary" name="formulario" value="alterar">
+                        </form>
+                    </td>
+
+              @endforeach
+    </table>
+    @section('titulo','lista de patrimonio')                
+    <table class="table table-sm">
+          @foreach ($Patrimonio as $patrimonio)
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th>nome</th><br>
+               <th>localização</th><br>
+              <th>quantidade</th>
+              <th>tipo do patrimonio</th>
+             <th></th>
+             <th></th>
+             <th></th>
+
+
+            </tr>
+          </thead>
+
+                <td scope="row">{{$patrimonio->id}}</td>
+
+              <td>{{$patrimonio->nome}}</td>
+              <td>{{$patrimonio->localizacao}}</td>
+              <td>{{$patrimonio->quantidade_patrimonio}}</td>
+              <td>{{$patrimonio->tipo_patrimonio}}</td>
+
+
+                 <td>
+                       <form action="{{route('patrimonio.delete', ['id' => $patrimonio->id])}}" method="post">
+                        @csrf
+                        @method('DELETE')   
+                        <input type="submit" class="btn btn-primary" value="deletar">
+                        </form> 
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <form action="{{route('patrimonio.edit', ['id' => $patrimonio->id])}}" method="post">
+                            @csrf
+                            <input type="submit" class="btn btn-primary" name="formulario" value="alterar">
+                        </form>
+                    </td>
+
+              @endforeach
+        </table><br>
+
+
+
+    
 
   
         <form action="{{route('patrimonio.create')}}" method="post">
