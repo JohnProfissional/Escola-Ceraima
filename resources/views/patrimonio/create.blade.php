@@ -168,10 +168,9 @@
  
       
                       
-            <h2>Cadastre-se os dados do patrimonio</h2><br>
            
-                <div class="mb-3">
-                    <div class="pull-right">
+           
+             
                        
                         <a class="btn btn-primary" href="">Voltar</a>
                     </div>
@@ -181,6 +180,7 @@
                          
                                    
                                       <form action="{{route('patrimonio.store')}}" method="post">
+                                         <h2>Cadastre-se os dados do patrimonio</h2><br>
         
                                           @csrf
                                        
@@ -218,15 +218,7 @@
 
 
 
-                            
-                                     
-            
-                
-
-            </div>
-        </div>
-    </div>
-</div>
+                        
 <div class="tile-footer">
    
   </div>
