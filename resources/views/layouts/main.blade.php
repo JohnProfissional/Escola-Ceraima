@@ -1,4 +1,4 @@
-
+@extends('layouts.app')
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,9 +11,9 @@
 </head>
 <body>
    
-    <div id="container">
-        @include('layouts.app')
-    </div>
+
+        
+  
 		
     <div id="container">
     
