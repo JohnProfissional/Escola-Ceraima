@@ -134,8 +134,10 @@ Route::post('/storepatrimonio',[PatrimonioController::class,'store'])->middlewar
 
 Route::post('/patrimonio/edit/{id}',[PatrimonioController::class,'edit'])->middleware(['auth'])->name('patrimonio.edit');
 Route::put('/patrimonio/edit/{id}',[PatrimonioController::class,'edit'])->middleware(['auth'])->name('patrimonio.edit');
+Route::delete('/patrimonio/update',[PatrimonioController::class, 'update'])->middleware(['auth'])->name('patrimonio.update');
 
 Route::delete('/patrimonio/{id}',[PatrimonioController::class, 'destroy'])->middleware(['auth'])->name('patrimonio.delete');
+
 
 
 
