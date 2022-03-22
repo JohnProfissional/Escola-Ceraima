@@ -175,7 +175,7 @@
                         <a class="btn btn-primary" href="">Voltar</a>
                     </div>
                     
-                                        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                        <div class=" col-sm-4 col-md-4 text-center">
                             
                             
                                    
