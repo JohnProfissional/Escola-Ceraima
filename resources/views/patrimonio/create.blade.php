@@ -184,14 +184,15 @@
         
                                           @csrf
                                        
-                                        <label for="nome">nome</label>
+                                        <label for="nome">nome</label><br>
                                         <input type="text" class="form-control" name="nome" id="nome">
 
-                                        <label>tipo_patrimonio</label>
+                                        <label>tipo_patrimonio</label><br>
                                         <input type="text" class="form-control" name="tipo_patrimonio" id="nome">
 
-                                        <label>quantidade de patrimonio</label>
+                                        <label>quantidade de patrimonio</label><br>
                                         <input type="text" class="form-control" name="quantidade_patrimonio" id="nome"><br>
+                                        
                                         <label>localizacao</label> 
                                          <input type="text" class="form-control" name="localizacao" id="nome"><br>
 
