@@ -174,34 +174,34 @@
                     <div class="pull-right">
                        
                         <a class="btn btn-primary" href="">Voltar</a>
-             
+                    </div>
                     
                        
                             
                             <div class="row g-3">
-                                  
+                                    <div class="col">
                                       <form action="{{route('patrimonio.store')}}" method="post">
         
                                           @csrf
                                        
                                         <label for="nome">nome</label><br>
-                                        <input type="text" class="form-control" name="nome" id="nome">
+                                        <input type="text" class="form-control" name="nome" id="nome" style="width:80px">
 
                                         <label>tipo_patrimonio</label><br>
-                                        <input type="text" class="form-control" name="tipo_patrimonio" id="nome">
+                                        <input type="text" class="form-control" name="tipo_patrimonio" id="nome" style="width:80px">
 
                                         <label>quantidade de patrimonio</label><br>
-                                        <input type="text" class="form-control" name="quantidade_patrimonio" id="nome"><br>
+                                        <input type="text" class="form-control" name="quantidade_patrimonio" id="nome" style="width:80px"><br>
 
                                         <label>localizacao</label> 
-                                         <input type="text" class="form-control" name="localizacao" id="nome"><br>
+                                         <input type="text" class="form-control" name="localizacao" id="nome" style="width:80px"><br>
 
                                          <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                                             <button type="submit" class="btn btn-primary">Adicionar</button>
                                          </div>
                                             
                                             
-                          
+                                    </div>
                         
                         </form>
     
