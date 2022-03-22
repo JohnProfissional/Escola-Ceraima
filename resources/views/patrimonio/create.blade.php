@@ -183,7 +183,7 @@
                                         <form class="row g-3" action="{{route('patrimonio.store')}}" method="post">
           
                                             @csrf
-                                        <div class="col-md-4">
+                                  
                                           <label for="formGroupExampleInput2" class="form-label">nome</label><br>
                                           <div class="col-md-4">
                                            <label for="inputPassword4" class="form-label">nome</label>
@@ -207,9 +207,54 @@
                                            </div>
                                          </div>     
                                             
-                                    </div>
+                               
                         
                         </form>
+
+
+                         <x-slot name="header">
+                       
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            <h2>Cadastre-se os dados do hotel</h2><br>
+            <form action="{{route('patrimonio.store')}}" method="post"             enctype="multipart/form-data">
+                @csrf
+                <div class="mb-3">
+                    <div class="pull-right">
+                       
+                        <a class="btn btn-primary" href="">Voltar</a>
+                    </div>
+                    
+                       
+                            <label for="formGroupExampleInput" class="form-label">Nome do hotel</label><br>
+                            <input name="nome" type="text" class="form-control"  placeholder="Digite o nome do hotel">
+                            
+                            <label for="formGroupExampleInput2" class="form-label">Quantidade de quarto</label><br>
+                            <input type="text" name="quantidade_quarto" class="form-control" placeholder="Digite  quantidade de quarto">
+                            
+                            <label for="formGroupExampleInput" class="form-label">Telefone</label><br>
+                            <input name="telefone" type="Tel" class="form-control"  placeholder="Digite o telefone do hotel">
+                            
+                            <label for="formGroupExampleInput2" class="form-label">Celular</label><br>
+                            <input type="text" name="celular" class="form-control" placeholder="Digite o telefone do hotel">
+                    
+                            <label for="formGroupExampleInput2" class="form-label">E-mail</label><br>
+                            <input type="email" name="email" class="form-control" placeholder="Digite o email do hotel">
+                    
+                            <div class="form-group">
+                                <strong>Imagem:</strong>
+                                <input  type="file" name="image" class="form-control" placeholder="imagem">
+                            </div>
+    
+                    </div>
+                  
+                </div><br>
+                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                </div>
+            </form>
+                      
+        </x-slot>
+                    
 
 
 
