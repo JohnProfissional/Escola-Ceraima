@@ -50,7 +50,7 @@
 
               @endforeach
        
-
+ </table>
             
  
     
@@ -62,7 +62,7 @@
         <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio">
      </form>
     
-    </table>
+   
      
 
    
