@@ -170,7 +170,7 @@
                        
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             <h2>Cadastre-se os dados do patrimonio</h2><br>
-            <form action="{{route('hotel.store_hotel')}}" method="post"             enctype="multipart/form-data">
+            <form action="{{route('patrimonio.store')}}" method="post"             enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
                     <div class="pull-right">
