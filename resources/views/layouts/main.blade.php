@@ -10,9 +10,7 @@
 	<title>Document</title>
 </head>
 <body>
-   
-
-        
+   @extends('layouts.app')  
   
 		
     <div id="container">
@@ -60,5 +58,5 @@
 
 </body>
 </html>
-@extends('layouts.app')
+
 
