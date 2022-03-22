@@ -179,7 +179,7 @@
                        
                             
                             <div class="row g-3">
-                                    <div class="col">
+                                   
                                       <form action="{{route('patrimonio.store')}}" method="post">
         
                                           @csrf
@@ -201,7 +201,7 @@
                                          </div>
                                             
                                             
-                                    </div>
+                                   
                         
                         </form>
     
