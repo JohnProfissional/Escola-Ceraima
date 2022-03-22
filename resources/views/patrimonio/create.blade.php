@@ -174,12 +174,12 @@
                     <div class="pull-right">
                        
                         <a class="btn btn-primary" href="">Voltar</a>
-                    </div>
+             
                     
                        
                             
                             <div class="row g-3">
-                                    <div class="col">
+                                  
                                       <form action="{{route('patrimonio.store')}}" method="post">
         
                                           @csrf
@@ -192,7 +192,7 @@
 
                                         <label>quantidade de patrimonio</label><br>
                                         <input type="text" class="form-control" name="quantidade_patrimonio" id="nome"><br>
-                                        
+
                                         <label>localizacao</label> 
                                          <input type="text" class="form-control" name="localizacao" id="nome"><br>
 
@@ -201,7 +201,7 @@
                                          </div>
                                             
                                             
-                                    </div>
+                          
                         
                         </form>
     
