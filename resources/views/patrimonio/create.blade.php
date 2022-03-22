@@ -166,7 +166,7 @@
       
  include('layout.app')
  
-        <x-slot name="header">
+      
                       
             <h2>Cadastre-se os dados do patrimonio</h2><br>
            
@@ -206,9 +206,7 @@
     
                     </div>
           
-        </x-slot>
-                    
-        
+      
                             
       
                     
@@ -218,63 +216,7 @@
                     <meta name="viewport" content="width=device-width, initial-scale=2.0">   
 
 
-                    <x-app-layout>
- 
-        <x-slot name="header">
-                       
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            <h2>Cadastre-se os dados do hotel</h2><br>
-            <form action="{{route('hotel.store_hotel')}}" method="post"             enctype="multipart/form-data">
-                @csrf
-                <div class="mb-3">
-                    <div class="pull-right">
-                       
-                        <a class="btn btn-primary" href="">Voltar</a>
-                    </div>
-                    
-                       
-                            <label for="formGroupExampleInput" class="form-label">Nome do hotel</label><br>
-                            <input name="nome" type="text" class="form-control"  placeholder="Digite o nome do hotel">
-                            
-                            <label for="formGroupExampleInput2" class="form-label">Quantidade de quarto</label><br>
-                            <input type="text" name="quantidade_quarto" class="form-control" placeholder="Digite  quantidade de quarto">
-                            
-                            <label for="formGroupExampleInput" class="form-label">Telefone</label><br>
-                            <input name="telefone" type="Tel" class="form-control"  placeholder="Digite o telefone do hotel">
-                            
-                            <label for="formGroupExampleInput2" class="form-label">Celular</label><br>
-                            <input type="text" name="celular" class="form-control" placeholder="Digite o telefone do hotel">
-                    
-                            <label for="formGroupExampleInput2" class="form-label">E-mail</label><br>
-                            <input type="email" name="email" class="form-control" placeholder="Digite o email do hotel">
-                    
-                            <div class="form-group">
-                                <strong>Imagem:</strong>
-                                <input  type="file" name="image" class="form-control" placeholder="imagem">
-                            </div>
-    
-                    </div>
-                  
-                </div><br>
-                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                    <button type="submit" class="btn btn-primary">Adicionar</button>
-                </div>
-            </form>
-                      
-        </x-slot>
-                    
-        
-                            
-      
-                    
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-                    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/styles.css'); }}">
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                    <meta name="viewport" content="width=device-width, initial-scale=2.0">        
-                            
-                                     
-                      
-                </x-app-layout>     
+
                             
                                      
             
