@@ -42,18 +42,14 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                   <div class="container">
-                         <form action="{{route('patrimonio.create')}}" method="post">
+        
+ <table class="table table-sm">
+   <form action="{{route('patrimonio.create')}}" method="post">
         @csrf
         
         <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio">
      </form>
-     </div>
 
-
-
-
- <table class="table table-sm">
  @section('titulo','lista de patrimonio') 
 
   
