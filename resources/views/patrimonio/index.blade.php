@@ -1,4 +1,4 @@
-
+@extends('layouts.app')
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +10,7 @@
 	<title>Document</title>
 </head>
 <body>
-@include('layouts.app')
+
 
 	<div id="header">
 			<h1>@yield('titulo')</h1>
@@ -26,6 +26,8 @@
 					<li><a href="{{route('manutencao.index')}}">Manutenção</a> </li>
 					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
 				</ul>
+             </div>
+     </div>
                 <div class="conteudo">
     @section('titulo','lista de patrimonio')                
     <table class="table table-sm">
