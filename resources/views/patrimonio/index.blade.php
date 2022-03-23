@@ -47,7 +47,7 @@
           @foreach ($Patrimonio as $patrimonio)
           <thead>
             <tr>
-              <th scope="col">id</th>
+            
               <th>nome</th><br>
                <th>localização</th><br>
               <th>quantidade</th>
@@ -57,7 +57,7 @@
              <th></th>
             </tr>
           </thead>
-                <td scope="row">{{$patrimonio->id}}</td>
+                
               <td>{{$patrimonio->nome}}</td>
               <td>{{$patrimonio->localizacao}}</td>
               <td>{{$patrimonio->quantidade_patrimonio}}</td>
