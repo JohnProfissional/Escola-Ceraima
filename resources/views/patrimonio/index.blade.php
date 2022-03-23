@@ -42,9 +42,9 @@
  @section('titulo','lista de patrimonio') 
  <form action="{{route('patrimonio.create')}}" method="post">
         @csrf
-        <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio">
-     </form>
-          @foreach ($Patrimonio as $patrimonio)
+        <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio"><br>
+        
+         @foreach ($Patrimonio as $patrimonio)
           <thead>
             <tr>
             
@@ -78,6 +78,8 @@
                         </form>
                     </td>
               @endforeach     
+     </form>
+         
  </table>
 		</div>
         </div>
