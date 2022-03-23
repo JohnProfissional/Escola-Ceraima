@@ -10,7 +10,6 @@
 </head>
 <body>
 @include('layouts.app')
-
 @yield('conteudo')<br>
 	<div id="header">
 			<h1>@yield('titulo')</h1>
@@ -27,32 +26,24 @@
 					<li><a href="{{route('previsaoentregar.index')}}">Previsão de entregar de equipamentos </a> </li>
 				</ul>
 			</div>
-	</div>
-
+      </div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-        
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
-
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
-                    @endif
-        
+                    @endif   
  <table class="table table-sm">
-   <form action="{{route('patrimonio.create')}}" method="post">
+ @section('titulo','lista de patrimonio') 
+ <form action="{{route('patrimonio.create')}}" method="post">
         @csrf
-        
         <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio">
      </form>
-
- @section('titulo','lista de patrimonio') 
-
-  
           @foreach ($Patrimonio as $patrimonio)
           <thead>
             <tr>
@@ -64,19 +55,13 @@
              <th></th>
              <th></th>
              <th></th>
-
-
             </tr>
           </thead>
-
                 <td scope="row">{{$patrimonio->id}}</td>
-
               <td>{{$patrimonio->nome}}</td>
               <td>{{$patrimonio->localizacao}}</td>
               <td>{{$patrimonio->quantidade_patrimonio}}</td>
               <td>{{$patrimonio->tipo_patrimonio}}</td>
-
-
                  <td>
                        <form action="{{route('patrimonio.delete', ['id' => $patrimonio->id])}}" method="post">
                         @csrf
@@ -85,7 +70,6 @@
                         </form> 
                     </td>
                     <td>
-
                     </td>
                     <td>
                         <form action="{{route('patrimonio.edit', ['id' => $patrimonio->id])}}" method="post">
@@ -93,38 +77,17 @@
                             <input type="submit" class="btn btn-primary" name="formulario" value="alterar">
                         </form>
                     </td>
-
-              @endforeach
-              
-              
-       
+              @endforeach     
  </table>
-            
- 
 		</div>
-
-
-                </div>
+        </div>
             </div>
         </div>
     </div>
 </div>
 
 
-	 <h4>@yield('subtitulo')</h4>
-  <table class="col" id="row">
-
-  	 
-
-       <div class="row g-3">
-        <div class=col>
-
-        </div>
-
-       </div>
-
-
-  </table>
+	
 <footer>
 			<br>
 			<br><br>
