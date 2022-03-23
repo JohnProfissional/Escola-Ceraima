@@ -38,7 +38,10 @@
         @csrf
        
         
-         @foreach ($Patrimonio as $patrimonio)
+         
+               <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio">
+     </form>
+     @foreach ($Patrimonio as $patrimonio)
           <thead>
             <tr>
             
@@ -73,8 +76,6 @@
                     </td>
               @endforeach  
               
-               <input type="submit" class="btn btn-primary" name="formulario" value="cadastrar novo patrimônio">
-     </form>
          
  </table>
 		</div>
