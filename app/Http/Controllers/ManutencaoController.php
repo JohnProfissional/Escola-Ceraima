@@ -44,6 +44,6 @@ class ManutencaoController extends Controller
             $Manutencao = new Manutencao();
             $Manutencao->data_manutencao=$request->data_manutencao;
             $Manutencao->patrimonio_id=$request->patrimonio_id;            
-            $Manutencao->save();;
+            $Manutencao->save();
     }
 }
